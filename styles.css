@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
+
+:root {
+    --flush-orange-50: #fffaec;
+    --flush-orange-100: #fff4d3;
+    --flush-orange-200: #ffe5a5;
+    --flush-orange-300: #ffd16d;
+    --flush-orange-400: #ffb232;
+    --flush-orange-500: #ff980a;
+    --flush-orange-600: #ff8000;
+    --flush-orange-700: #cc5d02;
+    --flush-orange-800: #a1480b;
+    --flush-orange-900: #823d0c;
+    --flush-orange-950: #461d04;
+
+}
+
+body {
+    font-family: 'Sriracha';
+    background-color: rgb(16, 18, 22);
+    color: white;
+}
+
+.nav {
+    background-color: rgba(16, 18, 22, 0.8);
+    padding: 1%;
+}
+
+.nav a {
+    color: var(--flush-orange-600);
+}
+
+
+.imagenes {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+}
+
+.display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col .index img {
+    max-height: 50em;
+    max-width: 100%;
+    filter: brightness(55%);
+    box-shadow: 0px 0px 9px 1px rgba(112,108,112,.5)
+}
+
+.col img {
+    max-height: 30em;
+    max-width: 100%;
+}
+
+.col span {
+    position: absolute;
+    z-index: 1;
+    color: var(--flush-orange-500);
+}
+
+.dropdown .btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    color: var(--flush-orange-600);
+}
+
+.dropdown-menu {
+    background-color: rgba(43, 41, 41, 0.5);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: white;
+    background-color: rgba(43, 41, 41, 0.5);
+}
+
+.titulo {
+    color: var(--flush-orange-400);
+    text-align: center;
+}
+
+.carousel {
+    width: 82%;
+    margin: auto;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+hr {
+    height: 5px;
+    color: var(--flush-orange-200);
+    width: 90%;
+    margin: 1% auto;
+}
+
+.principal .info {
+    display: flex;
+    width: 100%;
+    gap: 20%;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.principal h1 {
+    color: var(--flush-orange-50);
+    font-family: "bebas neue";
+}
+
+.principal h1 span {
+    color: var(--flush-orange-500);
+    font-size: large;
+    margin-top: -1%;
+}
+
+.principal {
+    background-image: url("./img/fondoAboutMe.jpg");
+    width: 100%;
+    height: 1080px;
+    background-size: cover;
+}
+
+.skills,
+.experience {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text {
+    margin-top: 2%;
+    width: 32%;
+    display: flex;
+    height: 10em;
+    margin-left: 53%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.aditionalInformation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h2,
+.experience h2 {
+    width: 85%;
+    font-family: "bebas neue";
+    color: red;
+    font-size: 2.5em;
+
+    text-align: center;
+}
+
+.aditionalInformation h2 {
+    font-family: "bebas neue";
+    color: red;
+    font-size: 2.5em;
+}
+
+.experience ul {
+    width: 80%;
+    margin-right: -21%;
+}
+
+
+.listaSitios h3,
+.listaSitios li {
+    color: #fe0000;
+    font-family: 'bebas neue';
+}
+
+.trabajo li {
+    color: white;
+    font-family: 'Sriracha';
+}
+
+.lvlbar {
+    background-color: white;
+    width: 100%;
+    height: 1em;
+}
+
+h4 {
+    font-family: 'bebas neue';
+}
+
+.aditionalInformation ul {
+    margin-right: 6%;
+}
+
+.text {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50em;
+    width: 32%;
+}
+
+.lenguages {
+    display: flex;
+    width: 100%;
+    padding: spac;
+    justify-content: space-around;
+}
+
+.listaSitios li,
+.skills li {
+    list-style: none;
+}
+
+.trabajo li::before,
+.skills li::before {
+    content: "- ";
+}
+
+
+.lenguages div {
+    width: 15em;
+
+}
+
+.lenguages li {
+    list-style: none;
+}
+
+footer hr {
+    width: 50%;
+    margin: 2% auto auto;
+}
+
+
+
+footer h6 {
+    color: white;
+    margin-left: 47%;
+    font-family: 'bebas neue';
+}
+
+footer i {
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto 28.3%;
+}
+
+footer li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--flush-orange-300);
+}
