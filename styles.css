@@ -24,7 +24,12 @@ body {
 .nav {
     background-color: rgba(16, 18, 22, 0.8);
     padding: 1%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
+
 
 .nav a {
     color: var(--flush-orange-600);
@@ -349,12 +354,7 @@ form button{
     text-decoration: underline;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-}
+
 
 .contenido{
     position: relative;
@@ -376,4 +376,114 @@ nav{
 
 .breadcrumb-item.active{
     color: var(--flush-orange-600);
+}
+
+@media(max-width:778px ){
+    .row{
+        display: block;
+    }
+
+    .col{
+        margin-top: 1em;
+    }
+
+    footer ul {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav{
+        padding-top: 2em;
+
+    }
+
+    .contenido {
+        top: 7em;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    form input{
+        width: 90%;
+    }
+
+
+
+    .info img{
+        visibility: hidden;
+    }
+
+    .text{
+        width: 100%;
+        margin: auto;
+        margin-top: 10em;
+        padding-bottom: 7em;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .aditionalInformation ul {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .principal {
+        background-image: none;
+    }
+}
+
+@media(min-width:401px) and (max-width:840px ){
+    form{
+        width: 90%;
+    }
+
+    form input{
+        width: 90%;
+    }
+
+    .text{
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .info img{
+        max-height: 10em;
+        width: auto;
+    }
+}
+
+@media(min-width:841px) and (max-width:1440px ){
+    .text{
+        margin: auto;
+        width: 60%;
+        height: fit-content;
+    }
+
+    .info img{
+        max-height: 10em;
+        width: auto;
+    }
+
+    form{
+        width: 70%;
+    }
+
+    form input{
+        width: 90%;
+    }
+}
+
+@media(min-width:1441px) and (max-width:1850px ){
+    .text{
+        margin: auto;
+        width: 43%;
+    }
+
+    .info img{
+        max-height: 10em;
+        width: auto;
+    }
 }
